@@ -1,0 +1,255 @@
+header 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F1E9F0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+h1 
+{
+    margin-left: 20px;
+    font-size: 3em;
+    font-family: 'Cabin Sketch', cursive;
+}
+
+.confirmation-title
+{
+    font-size: 1em;
+    font-family: sans-serif;
+    margin-top: 15px;
+}
+
+.confirmation
+{
+   text-align: center;
+   display: center;
+}
+
+#formulaire
+{
+    display: flex;
+    justify-content: center;
+}
+
+footer 
+{
+    background-color: #F1E9F0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.fa-shopping-cart
+{
+    background-image: linear-gradient(to right, #C6824F, #8663F5);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+img
+{
+    width: 50%;
+    height: 50%;
+}
+
+body
+{
+    margin: 0;
+}
+
+section
+{
+    display: grid;
+    grid-template-columns: 40vw 40vw;
+    grid-row-gap: 30px;
+    grid-auto-rows: 60vh 60vh;
+    padding: 40px;
+    justify-content: center;
+    margin-left: 3%;
+    text-align: center;
+}
+
+section a
+{
+    background-color: #F1E9F0;
+    box-shadow: 1px 1px 6px grey;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+a:visited {
+    color: black;
+  }
+
+
+#choice, #detail
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+button
+{
+    display: flex;
+    margin-left: 42%;
+    margin-right: 38%;
+}
+.styled-table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+.styled-table thead tr {
+    background-color: #F1E9F0;
+    color: black;
+    text-align: left;
+}
+
+.styled-table th,
+.styled-table td {
+    padding: 12px 15px;
+}
+.styled-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.styled-table tbody tr td.image
+{
+    display: none;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+    background-color: #f2f2f2;
+}
+
+.styled-table tbody tr:last-of-type {
+    border-bottom: 2px solid #F1E9F0;
+}
+
+@media all and (max-width: 1112px)
+{
+
+}
+
+@media all and (min-width: 791px) and (max-width: 1100px)
+{
+
+}
+
+@media all and (max-width: 790px)
+{
+
+body
+{
+    width: auto;
+}
+
+table thead,
+.styled-table tfoot tr td.empty 
+{
+    display: none;
+}
+
+.styled-table tfoot tr td:not(.empty)
+{
+    display: inline-block;
+}
+
+.styled-table tbody tr td.image
+{
+    display: block;
+}
+
+.styled-table tbody tr td.actionContainer
+{
+    order: 6;
+}
+
+.styled-table tbody tr td.total
+{
+    order: 7;
+}
+
+.styled-table tbody tr td.name::before
+{
+    content: "Nom: ";
+}
+
+.styled-table tbody tr td.color::before
+{
+    content: "Couleur: ";
+}
+
+.styled-table tbody tr td.prix::before
+{
+    content: "Prix unitaire: ";
+}
+
+.styled-table tbody tr td.quantity::before
+{
+    content: "Quantité: ";
+}
+
+.styled-table tbody tr td.total::before
+{
+    content: "Total: ";
+}
+
+.styled-table tbody tr td.actionContainer button.delete
+{
+    font-size: 0;
+    width: 100px;
+    padding-left: 12px;
+    margin : 0;
+}
+
+.styled-table tbody tr td.actionContainer button.delete::before
+{
+    content: "Supprimer 1";
+    font-size: 13px;
+}
+
+table tbody tr 
+{
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+}
+
+section 
+{
+    grid-template-columns: auto;
+    padding: 0;
+    margin-left: 0;
+}
+
+.styled-table{
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+
+header
+{
+    flex-direction: column;
+}
+
+}
+
+@media all and (max-width: 390px)
+{
+.styled-table
+{
+    margin-left: 0;
+}
+
+}
